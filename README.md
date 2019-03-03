@@ -18,7 +18,7 @@ than it needs.
 
 ### How to run the Smart Home Simulator
 
-Once you have downloaded all java classes in one folder, compile House.java from terminal:
+Once you have downloaded all java classes and the configuration file ("house.txt" must be in the same folder), compile House.java from terminal:
 
 ```
 javac House.java
@@ -75,5 +75,8 @@ Time: 2:00
 The total cost is: 0.20GPB
 
 ```
+
+![](example1.gif)
+
 
 
