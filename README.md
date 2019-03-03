@@ -31,6 +31,12 @@ java House CONFIGURATION_FILE n
 Where CONFIGURATION_FILE is the file txt (it is provided in the repository) and "n" it is the number of hours
 which the house will run the simulation 
 
+Or just the configuration file:
+
+```
+java House CONFIGURATION_FILE
+```
+The simulation will run for 168 hours (1 week)
 
 ### Output example
 
