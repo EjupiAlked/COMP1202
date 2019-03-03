@@ -36,7 +36,7 @@ which the house will run the simulation
 
 ```
 javac House.java
-jav House house.txt 2
+java House house.txt 2
 ```
 ```
 
