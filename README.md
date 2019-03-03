@@ -21,12 +21,12 @@ than it needs.
 Once you have downloaded all java classes and the configuration file ("house.txt" must be in the same folder), compile House.java from terminal:
 
 ```
-javac House.java
+> javac House.java
 ```
 Run the program with these arguments:
 
 ```
-java House CONFIGURATION_FILE n
+> java House CONFIGURATION_FILE n
 ```
 Where CONFIGURATION_FILE is the file txt (it is provided in the repository) and "n" it is the number of hours
 which the house will run the simulation 
@@ -34,15 +34,15 @@ which the house will run the simulation
 Or just the configuration file:
 
 ```
-java House CONFIGURATION_FILE
+> java House CONFIGURATION_FILE
 ```
 The simulation will run for 168 hours (1 week)
 
 ### Output example
 
 ```
-javac House.java
-java House house.txt 2
+> javac House.java
+> java House house.txt 2
 ```
 ```
 
