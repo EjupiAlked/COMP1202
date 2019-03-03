@@ -2,12 +2,12 @@
 Smart Home Simulator (coursework Programming 1, University of Southampton)
 
 ## Coursework Aims
--Understand how to construct simple classes and implement methods.
--Are able to take simple pseudo-code descriptions and construct working Java code from them.
--Can write a working program to perform a complex task.
--Have an understanding of object oriented programming.
--Can correctly use polymorphism and I/O.
--Can write code that it is understandable and conforms to good coding practice
+* Understand how to construct simple classes and implement methods.
+* Are able to take simple pseudo-code descriptions and construct working Java code from them.
+* Can write a working program to perform a complex task.
+* Have an understanding of object oriented programming.
+* Can correctly use polymorphism and I/O.
+* Can write code that it is understandable and conforms to good coding practice
 
 ## Specification
 The aim of this coursework is to construct a simple simulation of the energy consumption- and energy
@@ -18,7 +18,7 @@ than it needs.
 
 ### How to run the Smart Home Simulator
 
-Once you have downloaded all java classes in one folder, compile the House.java class from terminal:
+Once you have downloaded all java classes in one folder, compile House.java from terminal:
 
 ```
 javac House.java
