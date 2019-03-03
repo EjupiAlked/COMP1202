@@ -1,5 +1,6 @@
-# Coursework1
+# Coursework1 
 Smart Home Simulator (coursework Programming 1, University of Southampton)
+This coursework was done in December 2018.
 
 ## Coursework Aims
 * Understand how to construct simple classes and implement methods.
