@@ -7,8 +7,6 @@
  * (as per {@link CyclicFixed}, but use a variable amount
  * of resources in each hour that they are switched on
  * (a random number within a min-max range).
- *
- *
  */
 public class CyclicVaries extends Appliance {
 
@@ -23,7 +21,6 @@ public class CyclicVaries extends Appliance {
      * The {@code cycleLength} property accepts only values
      * between 1 and 24, it will be assigned no value otherwise.
      *
-     *
      * @param name        the name of the appliance.
      * @param cycleLength the number of hours in which the appliance is on.
      * @param minUnits    the min units that cab be consumed each hour.
@@ -31,11 +28,11 @@ public class CyclicVaries extends Appliance {
      */
     CyclicVaries(String name, int cycleLength, float minUnits, float maxUnits) {
         super(name);
-
+        
         if(cycleLength >= 1 && cycleLength <= 24){
             this.cycleLength = cycleLength;
         }
-
+        
         this.minUnits    = minUnits;
         this.maxUnits    = maxUnits;
         this.currentTime = 0;
