@@ -10,7 +10,6 @@
  *
  */
 public class Battery {
-	
     private float batteryCapacity;
     private float batteryUnits;
 
@@ -66,7 +65,6 @@ public class Battery {
         // First case
         if(getSlots() >= unitsStored){
             batteryUnits += unitsStored;
-
         }
         // Second case
         else {
@@ -74,7 +72,6 @@ public class Battery {
             unitsStored = unitsStored - unitsWasted;
             batteryUnits += unitsStored;
         }
-
         return  unitsStored;
     }
 
@@ -98,12 +95,10 @@ public class Battery {
             unitsTaken = batteryUnits; //Max number of units possibile to take
             batteryUnits -= unitsTaken; //Updated the units in the battery
         }
-
         // Case 2:
         else{
             batteryUnits -= unitsTaken;
         }
-
         return unitsTaken;
     }
 }
