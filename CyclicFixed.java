@@ -8,7 +8,6 @@
  *
  */
 public class CyclicFixed extends Appliance {
-
     private float unitsFixed;
     private int   cycleLength;
     private int   currentTime;
@@ -31,7 +30,6 @@ public class CyclicFixed extends Appliance {
         if(cycleLength >= 1 && cycleLength <= 24){
             this.cycleLength = cycleLength;
         }
-
         currentTime = 0;
     }
 
@@ -46,7 +44,6 @@ public class CyclicFixed extends Appliance {
      */
     @Override
     public void timePasses() {
-
         try {
             checkMeterSet();
         } catch (Exception e) {
