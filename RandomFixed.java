@@ -11,7 +11,6 @@ import java.util.Random;
 
  */
 public class RandomFixed extends Appliance{
-
     private float unitsFixed;
     private int   probability;
 
