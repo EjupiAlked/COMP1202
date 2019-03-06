@@ -4,7 +4,6 @@
  *
  */
 public class Meter{
-
      private String utility;
      private double unitCost;
      private float  meterReading;
