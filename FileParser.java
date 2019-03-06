@@ -25,7 +25,6 @@ import java.util.List;
  */
 
 public class FileParser {
-
     private House  house;
     private String CONFIGURATION_FILE;
 
@@ -45,7 +44,6 @@ public class FileParser {
             "Cycle length:"
     };
 
-
     /***
      *  Instantiate a {@code FileParse} object, specifying the house
      *  which will be populated with {@link Appliance} objects read
@@ -58,7 +56,6 @@ public class FileParser {
         this.house                      = house;
         this.CONFIGURATION_FILE         = CONFIGURATION_FILE;
     }
-
 
     /**
      * This method will start parsing the TXT file converted into a
@@ -78,7 +75,6 @@ public class FileParser {
      *
      */
     public void start() {
-
         List<String> listLines = null;
         try {
             listLines = convertFileToList(CONFIGURATION_FILE);
@@ -86,6 +82,7 @@ public class FileParser {
             System.out.println("File not found");
             System.exit(1);
         }
+	    
         // Stops when cannot find any other subclass property.
         while (SUBCLASS_PROPERTY_POSITION < listLines.size()){
             try {
@@ -135,7 +132,6 @@ public class FileParser {
         while ((line = in.readLine()) != null) {
             listLines.add(line);
         }
-
         return listLines;
     }
 
@@ -180,7 +176,6 @@ public class FileParser {
                 }
                 currentLineParsed++;
             }
-
             return properties;
     }
 
