@@ -7,7 +7,6 @@
  *
  */
 public class BatteryMeter extends Meter{
-
     private Battery battery;
 
     /**
@@ -34,12 +33,9 @@ public class BatteryMeter extends Meter{
      */
     @Override
     public double report(){
-
         float unitsToStore = 0;
         float unitsToTake  = 0;
-
-
-
+        
         // case when production has exceeded the consumption
         if(this.getMeterReading() < 0){
             unitsToStore = battery.storeUnits(this.getMeterReading());
@@ -58,7 +54,7 @@ public class BatteryMeter extends Meter{
         double cost;
         float unitsDrawnFromMains;
 
-        if(this.getMeterReading() < 0 ){
+        if(this.getMeterReading() < 0 ) {
             unitsDrawnFromMains = 0.0f;
             cost = 0.0f;
             this.setMeterReading(0.0f);
@@ -66,7 +62,6 @@ public class BatteryMeter extends Meter{
         else{
             unitsDrawnFromMains = this.getMeterReading();
             cost = this.getUnitCost() * this.getMeterReading();
-
         }
 
         String format = "| %-12s | %-12s | %-12s | %-27s | %-29s | %-18s |%n";
@@ -79,7 +74,6 @@ public class BatteryMeter extends Meter{
         System.out.format(       "+--------------+--------------+--------------+-----------------------------+-------------------------------+--------------------+%n");
 
         this.setMeterReading(0);
-
         return cost;
     }
 }
