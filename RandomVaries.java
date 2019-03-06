@@ -10,7 +10,6 @@ import java.util.Random;
  */
 
 public class RandomVaries extends Appliance {
-
     private int    probability;
     private float  minUnits;
     private float  maxUnits;
@@ -56,5 +55,4 @@ public class RandomVaries extends Appliance {
             tellMeterToConsumeUnits(randomUnits);
         }
     }
-
 }
