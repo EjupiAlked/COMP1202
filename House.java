@@ -23,23 +23,17 @@ public class House {
         House house = new House(electricMeter, waterMeter);
 
         int hours;
-
         String CONFIGURATION_FILE = args[0];
 
         try {
             hours = Integer.parseInt(args[1]);
-
         }catch (Exception e){
             hours = 168;
-
         }
-
-
-
+	    
         FileParser configFile = new FileParser(house, CONFIGURATION_FILE);
         configFile.start();
-				house.activate(hours);
-
+	house.activate(hours);
     }
 	
 
@@ -94,10 +88,8 @@ public class House {
      * @param a the appliance to add the house
      */
     public void addElectricAppliance(Appliance a) {
-
         appliancesHouse.add(a);
         a.setMeter(electricMeter);
-
     }
 
     /**
@@ -129,15 +121,11 @@ public class House {
      * @return the total cost
      */
     public double activate() {
-
         double totalCost = 0;
-
         for (Appliance appliance : this.appliancesHouse) {
             appliance.timePasses();
         }
-
         totalCost += getTotalCost();
-
         return totalCost;
     }
 
@@ -151,9 +139,8 @@ public class House {
      */
     public double activate(int hours) {
         double totalCost = 0;
-
-        int currentHour = 0;
-        int currentDay = 1;
+        int currentHour  = 0;
+        int currentDay   = 1;
 
         for (int hour = 0; hour < hours; hour++) {
             if (currentHour != 24) {
@@ -177,7 +164,6 @@ public class House {
         } else {
             System.out.println(String.format("The total cost is: " + "%.2f", totalCost) + "GPB");
         }
-
         return totalCost;
     }
 
@@ -189,7 +175,6 @@ public class House {
      * @return the total cost
      */
     public double getTotalCost() {
-
         double cost = 0;
 
         System.out.format("+--------------+--------------+--------------+%n");
@@ -205,7 +190,6 @@ public class House {
             cost = (waterMeter.report()) + (electricMeter.report());
             System.out.format("+--------------+--------------+--------------+%n");
         }
-
         return cost;
     }
 }
