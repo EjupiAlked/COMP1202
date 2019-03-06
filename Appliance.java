@@ -8,7 +8,6 @@ import java.util.Random;
  *
  */
 public abstract class Appliance {
-
     private String name;
     private Meter  meter;
     private String utilityName;
@@ -30,11 +29,9 @@ public abstract class Appliance {
      * @param meter the meter to add to {@code Appliance}
      */
     public void setMeter(Meter meter) {
-
         this.meter       = meter;
         this.utilityName = meter.getUtilityName();
     }
-
 
     /**
      * Checks if a {@link Meter} object has been set
@@ -47,7 +44,6 @@ public abstract class Appliance {
             throw new Exception("The 'meter' has not been set." +
                     "\nSet meter in this appliance: " + this.getName());
         }
-
     }
 
     /**
@@ -65,8 +61,7 @@ public abstract class Appliance {
      * consumes their units each hour.
      */
     protected abstract void timePasses();
-
-
+    
     /**
      *  Returns the next pseudorandom, uniformly distributed
      *  {@code float} value between {@code min} and {@code max}
@@ -78,7 +73,6 @@ public abstract class Appliance {
      * @return     the random units generated.
      */
     public float generateRandomUnits(float min , float max){
-
         float randomAmountOfUnits;
         if(min+max < 0){
             randomAmountOfUnits = new Random().nextFloat() * (min - max) + max;
