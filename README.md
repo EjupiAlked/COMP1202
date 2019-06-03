@@ -11,7 +11,7 @@ This coursework was done in December 2018.
 * Can write code that it is understandable and conforms to good coding practice
 
 ## Specification
-The aim of this coursework is to construct a simple simulation of the energy consumption- and energy
+The aim of this coursework was to construct a simple simulation of the energy consumption- and energy
 generation- of a smart house. In the house are a number of appliances which consume/generate electricity
 or consume water when they operate, meters that record the amount of water and electricity
 consumed/generated and a battery which stores excess electricity if the house happens to generate more
